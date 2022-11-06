@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDE TASK 3(2)</title>
+</head>
+<body>
+    <h3>SDE TASK 3(2)</h3>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <p id="6"></p>
+    <script>
+        const cargoHold=['oxygen tanks','space suits','parrot','instrument manual','meal packs','slinky','security blanket'];
+        cargoHold[5]='space tether' //replacing slinky with space tether
+        document.getElementById("1").innerHTML = "Array : "+cargoHold;
+        document.getElementById("2").innerHTML = "Popped Element : "+cargoHold.pop(); //removing last element
+        document.getElementById("3").innerHTML = "Array : "+cargoHold;
+        cargoHold.shift();  //removing first element
+        document.getElementById("4").innerHTML = "Array : "+cargoHold;
+        cargoHold.unshift(1138); //adding number in first
+        cargoHold.push('20 meters');  //adding string at end
+        document.getElementById("5").innerHTML = "Array : "+cargoHold;
+        let literal='Final Array : '+cargoHold.toString()+'  Array Length : '+cargoHold.length;  //template literal
+        document.getElementById("6").innerHTML = literal; //final array and Array length
+    </script>
+</body>
+</html>

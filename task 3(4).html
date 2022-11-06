@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDE TASK 3(4)</title>
+</head>
+<body>
+    <h3>SDE TASK 3(4)</h3>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <script>
+        const holdCabinet1=['duct','gum',3.14,false,6.022e23];
+        const holdCabinet2=['orange drink','nerf toys','camera',42,'parsnip'];
+        document.getElementById("1").innerHTML = "Concatted Array : "+holdCabinet1.concat(holdCabinet2);
+        const sliceArray=holdCabinet1.slice(0,2).concat(holdCabinet2.slice(0,2));
+        //slice does not alter the original Array
+        document.getElementById("2").innerHTML = "Slice of two Arrays : "+sliceArray;
+        holdCabinet1.reverse();
+        holdCabinet2.sort();
+        //sort and reverse alters the original Array
+        document.getElementById("3").innerHTML = "Reverse of Arrays1 : "+holdCabinet1;
+        document.getElementById("4").innerHTML = "Sorted Arrays2 : "+holdCabinet2;
+    </script>
+</body>
+</html>

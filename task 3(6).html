@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDE TASK 3(6)</title>
+</head>
+<body>
+    <h2>SDE TASK 3(6)</h2>
+    <h3>a)</h3>
+    <p id="1"></p>
+    <h3>b)</h3>
+    <p id="2"></p>
+    <h3>c)</h3>
+    <p id="3"></p>
+    <p id="4"></p>
+    <h3>d)</h3>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+    <script>
+        document.getElementById("1").innerHTML ="Elements reated and pushed into Table";
+        const element1=['hydrogen','H',1.008];
+        const element2=['helium','He',4.003];
+        const element3=['iron','Fe',55.85];
+        const table=[]
+        table.push(element1)
+        table.push(element2)
+        table.push(element3)
+        document.getElementById("2").innerHTML ="Table Structure : "+ table;
+        document.getElementById("3").innerHTML ="Table[1] : "+table[1]; 
+        //element at index 1 in table(element2)
+        document.getElementById("4").innerHTML ="Table[1][1] : "+table[1][1]; 
+        //element at ndex 1 of index 1 in table(2 nd position in element 2)
+        document.getElementById("5").innerHTML ="Mass of element 1   : "+table[0][2]; 
+        document.getElementById("6").innerHTML ="Name of element 2   : "+table[1][0]; 
+        document.getElementById("7").innerHTML ="Symbol of element 3 : "+table[2][1]; 
+    </script>
+</body>
+</html>

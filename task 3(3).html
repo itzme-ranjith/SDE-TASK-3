@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDE TASK 3(3)</title>
+</head>
+<body>
+    <h3>SDE TASK 3(3)</h3>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <script>
+        const cargoHold=[1138,'space suits','parrot','instrument manual','meal packs','space tether','20 meters'];
+        cargoHold.splice(3,0,"keys"); //inserting key at index 3
+        document.getElementById("1").innerHTML = "Array : "+cargoHold; 
+        cargoHold.splice(cargoHold.indexOf("instrument manual"),1); //removing instrument manual
+        document.getElementById("2").innerHTML = "Array : "+cargoHold; 
+        cargoHold.splice(2,3,"cat","fob","string cheese"); //replacing values from 2-4
+        document.getElementById("3").innerHTML = "Array : "+cargoHold; 
+    </script>
+</body>
+</html>

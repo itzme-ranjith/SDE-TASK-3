@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDE TASK 3(7)</title>
+</head>
+<body>
+    <h2>SDE TASK 3(7)</h2>
+    <h3>1)</h3> <p id="1"></p>
+    <h3>2)</h3><p id="2"></p>
+    <h3>3)</h3> <p id="3"></p>
+    <h3>4)</h3>  <p id="4"></p>
+    <h3>5)</h3>  <p id="5"></p>
+    <h3>6)</h3>  <p id="6"></p>
+    <h3>7)</h3> <p id="7"></p>
+    <h3>8)</h3>  <p id="8"></p>
+    <h3>9)</h3> <p id="9"></p>
+    <h3>10)</h3>  <p id="10"></p>
+    <h3>11)</h3> <p id="11"></p>
+    <script>
+        let people=["Greg", "Mary", "Devon", "James"];
+        let text="";
+        people.forEach(printElement);
+        function printElement(value)
+        {
+            text+=value+"<BR>";
+            console.log(value);
+        }
+        document.getElementById("1").innerHTML = text;
+        people.splice(0,1);//removing Gerg
+        document.getElementById("2").innerHTML = people;
+        people.pop();//removing James
+        document.getElementById("3").innerHTML = people;
+        people.unshift("Matt") //adding Matt at begining
+        document.getElementById("4").innerHTML = people;
+        people.push("Ranjith Kumar S")
+        document.getElementById("5").innerHTML = people;
+        let l=people.length;
+        text="";
+        for(i=0;i<l;i++)
+        {
+            text+=people[i]+"<BR>";
+            console.log(people[i]);
+            if(people[i]=="Mary")
+              break;
+        }
+        document.getElementById("6").innerHTML = text;
+        arrCopy=people.slice(2);
+        document.getElementById("7").innerHTML=arrCopy;
+        document.getElementById("8").innerHTML="Index of Mary : "+people.indexOf("Mary");
+        document.getElementById("9").innerHTML="Index of Foo  : "+people.indexOf("Foo");
+        people=["Greg", "Mary", "Devon", "James"]; //redefining people with initial values
+        people.splice(2,1,"Elizabeth","Artie","James");
+        document.getElementById("10").innerHTML=people;
+        let withBob=people.concat("Bob");
+        document.getElementById("11").innerHTML=withBob;
+    </script>
+</body>
+</html>

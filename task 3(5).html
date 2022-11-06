@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDE TASK 3(5)</title>
+</head>
+<body>
+    <h2>SDE TASK 3(5)</h2>
+    <h3>a)</h3>
+    <p id="1"></p>
+    <p id="2"></p>
+    <h3>b)</h3>
+    <p id="3"></p>
+    <p id="4"></p>
+    <h3>c)</h3>
+    <p id="5"></p>
+    <p id="6"></p>
+    <script>
+        let str='In space, no one can hear you code.';
+        str.split('e'); //split do not alter original string.
+        document.getElementById("1").innerHTML = "str.split() : "+str.split();
+        document.getElementById("2").innerHTML = "str.split(e) : "+str.split('e');
+        //parameter inside split is to split string whenever the parameter is found
+        const arr=['B','n','n','5']
+        arr.join('e') //join do not alter original array.
+        document.getElementById("3").innerHTML = "arr.join()   : "+arr.join();
+        document.getElementById("4").innerHTML = "arr.join('a') : "+arr.join('a');
+        //parameter inside join is to join the elements of array using that parameter
+        //split and join 
+        let str2="water,space suits,food,plasma sword,batteries"
+        const alphabets=str2.split('');//alphabetizing the content
+        document.getElementById("5").innerHTML = "ALPHABETS : "+alphabets;
+        let newStr=alphabets.join('');//combining into new String
+        document.getElementById("6").innerHTML =newStr; s
+    </script>
+</body>
+</html>
